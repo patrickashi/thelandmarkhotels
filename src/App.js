@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Section from './components/Section';
+import Footer from './components/Footer';
+import Rooms from './pages/Rooms';
+import Dining from './pages/Dinning';
+import Facilities from './pages/Facilities';
+import Contact from './pages/Contact';
+
+import herobg2 from './images/herobg2.jpg';
+import Breathtakingviews from './components/Breathtakingviews';
 
 function App() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar isScrolled={isScrolled} />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <Breathtakingviews />
+             
+              
+            </>
+          } />
+          <Route path="/rooms" element={<Rooms />} />
+          <Route path="/dining" element={<Dining />} />
+          <Route path="/facilities" element={<Facilities />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
