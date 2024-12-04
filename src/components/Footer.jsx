@@ -27,7 +27,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-[#8B0000] text-white">
+    <footer className="bg-[#991b1b] text-white">
       <div className="container mx-auto px-4 py-6 text-xs">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Newsletter Section */}

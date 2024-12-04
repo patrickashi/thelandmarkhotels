@@ -116,7 +116,7 @@ export default function Roomslider() {
                       alt={room.name}
                       className="w-[400px] md:w-full aspect-[4/3] object-cover"
                     />
-                    <div className="absolute bottom-0 left-0 right-0 bg-[#8B0000] text-white text-xs flex justify-between items-center px-4 py-2">
+                    <div className="absolute bottom-0 left-0 right-0 bg-[#991b1b] text-white text-xs flex justify-between items-center px-4 py-2">
                       <div className="flex items-center gap-2">
                         <Maximize2 className="w-4 h-4" />
                         <span className="uppercase font-medium tracking-wider">Size {room.size}</span>
@@ -131,7 +131,7 @@ export default function Roomslider() {
                     <h3 className="text-[#C4A484] text-2xl font-serif mb-3">{room.name}</h3>
                     <p className="text-white/60 text-sm mb-6">{room.description}</p>
                     <button
-                      className="uppercase text-sm tracking-wider py-3 px-6 bg-[#8B0000] text-white hover:bg-[#A52A2A] transition-colors duration-300"
+                      className="uppercase text-sm tracking-wider py-3 px-6 bg-[#991b1b] text-white hover:bg-[#A52A2A] transition-colors duration-300"
                       onClick={() => handleBookNow(room.id)}
                     >
                       Book Now From ${room.price}
