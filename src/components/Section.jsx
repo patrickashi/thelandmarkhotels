@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
-function Section({ title, description, imageSrc, imagePosition }) {
+function Section({ title, description, imageSrc, imagePosition, videoSrc }) {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -38,7 +38,7 @@ function Section({ title, description, imageSrc, imagePosition }) {
   }, []);
 
   const contentOrder = imagePosition === 'left' ? 'order-2' : 'order-1';
-  const imageOrder = imagePosition === 'left' ? 'order-1' : 'order-2';
+  const mediaOrder = imagePosition === 'left' ? 'order-1' : 'order-2';
 
   return (
     <motion.section
@@ -61,18 +61,30 @@ function Section({ title, description, imageSrc, imagePosition }) {
               </button>
             </motion.div>
           </div>
-          <div className={`md:w-1/2 mt-8 md:mt-0 ${imageOrder}`}>
+          <div className={`md:w-1/2 mt-8 md:mt-0 ${mediaOrder}`}>
             <motion.div
-              className="relative h-64 md:h-96 overflow-hidden  shadow-xl"
+              className="relative h-64 md:h-96 overflow-hidden shadow-xl"
               initial={{ x: imagePosition === 'left' ? -50 : 50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <img
-                src={imageSrc}
-                alt={title}
-                className="w-full h-full object-cover"
-              />
+              {videoSrc ? (
+                <video
+                  className="w-full h-full "
+                  src={videoSrc}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  controls
+                />
+              ) : (
+                <img
+                  src={imageSrc}
+                  alt={title}
+                  className="w-full h-full object-cover"
+                />
+              )}
             </motion.div>
           </div>
         </div>
@@ -82,4 +94,3 @@ function Section({ title, description, imageSrc, imagePosition }) {
 }
 
 export default Section;
-

@@ -14,10 +14,10 @@ function Hero() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <div className="relative z-10 text-center text-white">
-        <p>COME AND ENJOY</p>
-        <h1 className="text-5xl md:text-6xl mb-4 font-playfair">WELCOME TO THE LANDMARK HOTEL</h1>
+        <p className='font-serif'>COME AND ENJOY</p>
+        <h1 className="text-5xl md:text-6xl mb-4 font-serif my-10">WELCOME TO THE LANDMARK HOTEL</h1>
         <p className="text-xl md:text-2xl mb-8">Experience luxury like never before</p>
-        <button className="bg-[#991b1b] text-sm text-white px-6 py-3  transition duration-300">
+        <button className="bg-[#991b1b] text-sm text-white px-6 py-3 mt-4  transition duration-300">
           BOOK ONLINE
         </button>
       </div>

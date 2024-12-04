@@ -11,6 +11,8 @@ import Contact from './pages/Contact';
 
 import herobg2 from './images/herobg2.jpg';
 import Breathtakingviews from './components/Breathtakingviews';
+import Roomslider from './components/Roomslider';
+import Videosec from './components/Videosec';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +35,8 @@ function App() {
             <>
               <Hero />
               <Breathtakingviews />
-             
+              <Roomslider />
+              <Videosec />
               
             </>
           } />
