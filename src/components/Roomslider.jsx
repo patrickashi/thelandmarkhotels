@@ -1,14 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Users2, Maximize2, ChevronLeft, ChevronRight } from 'lucide-react';
-import herobg1 from "../images/herobg1.jpg";
-import herobg2 from "../images/herobg2.jpg";
+import signature_room from "../images/signature_room.jpg";
+import deluxe_room from "../images/deluxe_room.jpg";
+import luxury_room from "../images/luxury_room.jpg";
+import presidential_suite from "../images/presidential_suite.jpg";
+import oceanview_room from "../images/oceanview_room.jpg";
 
 const rooms = [
   {
     id: 1,
     name: "Signature Room",
-    image: herobg1,
+    image: signature_room,
     size: "70M2",
     maxPeople: 2,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -17,7 +20,7 @@ const rooms = [
   {
     id: 2,
     name: "Deluxe Room",
-    image: herobg2,
+    image: deluxe_room,
     size: "50M2",
     maxPeople: 3,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -26,7 +29,7 @@ const rooms = [
   {
     id: 3,
     name: "Luxury Room",
-    image: herobg1,
+    image: luxury_room,
     size: "50M2",
     maxPeople: 4,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -35,7 +38,7 @@ const rooms = [
   {
     id: 4,
     name: "Presidential Suite",
-    image: herobg2,
+    image: presidential_suite,
     size: "100M2",
     maxPeople: 5,
     description: "Experience the ultimate luxury with our presidential suite.",
@@ -45,7 +48,7 @@ const rooms = [
   {
     id: 5,
     name: "Ocean View Room",
-    image: herobg1,
+    image: oceanview_room,
     size: "80M2",
     maxPeople: 2,
     description: "A stunning room with a view of the ocean.",

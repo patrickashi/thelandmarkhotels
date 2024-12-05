@@ -1,10 +1,17 @@
-import herobg1 from "../images/herobg1.jpg";
+import signature_room from "../images/signature_room.jpg";
+import deluxe_room from "../images/deluxe_room.jpg";
+import luxury_room from "../images/luxury_room.jpg";
+import presidential_suite from "../images/presidential_suite.jpg";
+import executive_room from "../images/executive_room.jpg";
+import standard_room from "../images/standard_room.jpg";
+import honeymoon_suite from "../images/honeymoon_suite.jpg";
+import family_suite from "../images/family_suite.jpg";
 
 export const rooms = [
     {
       id: 1,
       name: "Signature Room",
-      image: herobg1,
+      image: signature_room,
       size: "70M2",
       maxPeople: 2,
       description: "A luxurious room with breathtaking views of the city skyline, perfect for a romantic getaway.",
@@ -13,7 +20,7 @@ export const rooms = [
     {
       id: 2,
       name: "Deluxe Room",
-      image: "path-to-your-image/room2.jpg",
+      image: deluxe_room,
       size: "50M2",
       maxPeople: 3,
       description: "Spacious and elegant, the Deluxe Room is designed for comfort and convenience with modern amenities.",
@@ -22,7 +29,7 @@ export const rooms = [
     {
       id: 3,
       name: "Luxury Room",
-      image: "path-to-your-image/room3.jpg",
+      image: luxury_room,
       size: "80M2",
       maxPeople: 4,
       description: "A spacious suite with premium furnishings and an unbeatable view, ideal for families or business travelers.",
@@ -31,7 +38,7 @@ export const rooms = [
     {
       id: 4,
       name: "Presidential Suite",
-      image: "path-to-your-image/room4.jpg",
+      image: presidential_suite,
       size: "120M2",
       maxPeople: 5,
       description: "The epitome of luxury, with lavish interiors, a private jacuzzi, and unparalleled services.",
@@ -40,7 +47,7 @@ export const rooms = [
     {
       id: 5,
       name: "Executive Room",
-      image: "path-to-your-image/room5.jpg",
+      image: executive_room,
       size: "60M2",
       maxPeople: 2,
       description: "Designed for business travelers, the Executive Room offers a sleek and modern space with all the essentials.",
@@ -49,7 +56,7 @@ export const rooms = [
     {
       id: 6,
       name: "Standard Room",
-      image: "path-to-your-image/room6.jpg",
+      image: standard_room,
       size: "45M2",
       maxPeople: 2,
       description: "A comfortable and budget-friendly option for travelers looking for a peaceful and cozy stay.",
@@ -58,7 +65,7 @@ export const rooms = [
     {
       id: 7,
       name: "Honeymoon Suite",
-      image: "path-to-your-image/room7.jpg",
+      image: honeymoon_suite,
       size: "90M2",
       maxPeople: 2,
       description: "A romantic suite designed for newlyweds, complete with a luxurious king-sized bed and stunning city views.",
@@ -67,7 +74,7 @@ export const rooms = [
     {
       id: 8,
       name: "Family Suite",
-      image: "path-to-your-image/room8.jpg",
+      image: family_suite,
       size: "100M2",
       maxPeople: 6,
       description: "Perfect for families, this suite includes multiple bedrooms, a living area, and child-friendly amenities.",

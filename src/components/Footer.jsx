@@ -1,15 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import herobg1 from "../images/herobg1.jpg";
-import herobg2 from "../images/herobg2.jpg";
+import presidential_suite from "../images/presidential_suite.jpg";
+import oceanview_room from "../images/oceanview_room.jpg";
+import signature_room from "../images/signature_room.jpg";
+import honeymoon_suite from "../images/honeymoon_suite.jpg";
+import executive_room from "../images/executive_room.jpg";
+import luxury_room from "../images/luxury_room.jpg";
 
 const galleryImages = [
-  herobg1,
-  herobg2,
-  herobg1,
-  herobg2,
-  herobg1,
-  herobg2
+  presidential_suite,
+  oceanview_room,
+  signature_room,
+  honeymoon_suite,
+  executive_room,
+  luxury_room
 ]
 
 const footerLinks = [
