@@ -14,6 +14,7 @@ import Breathtakingviews from './components/Breathtakingviews';
 import Roomslider from './components/Roomslider';
 import Videosec from './components/Videosec';
 
+
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/dining" element={<Dining />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/contact" element={<Contact />} />
+
         </Routes>
         <Footer />
       </div>
