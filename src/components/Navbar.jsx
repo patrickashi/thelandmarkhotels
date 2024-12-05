@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import lm_logo from "../images/lm_logo.png";
 
 function Navbar({ isScrolled }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,11 @@ function Navbar({ isScrolled }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <span className=" font-bold text-white">The Landmark Hotel</span>
+            {/* <span className=" font-bold text-white">The Landmark Hotel</span> */}
+            <Link to="/" className='flex align-middle items-center'>
+              <img src={lm_logo} className='w-16' alt="logo" />
+              <p className='text-white text-xs'>LANDMARK <br/> HOTELS </p>
+            </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
@@ -52,7 +57,7 @@ function Navbar({ isScrolled }) {
       </div>
 
       {/* Mobile menu */}
-      <div className={`md:hidden fixed top-0 right-0 bottom-0 w-[300px] bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`md:hidden fixed top-0 right-0 bottom-0 w-[200px] bg-[#991b1b] text-white shadow-lg transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="pt-20 px-4">
           <MobileNavLink to="/" label="Home" onClick={toggleMenu} />
           <MobileNavLink to="/rooms" label="Rooms" onClick={toggleMenu} />
@@ -80,7 +85,7 @@ function MobileNavLink({ to, label, onClick }) {
   return (
     <Link
       to={to}
-      className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-gray-600 hover:bg-gray-100"
+      className="block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-600 hover:bg-gray-100"
       onClick={onClick}
     >
       {label}

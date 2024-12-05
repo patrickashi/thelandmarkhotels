@@ -12,7 +12,7 @@ const rooms = [
     size: "70M2",
     maxPeople: 2,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: 220
+    price: 50000
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const rooms = [
     size: "50M2",
     maxPeople: 3,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: 265
+    price: 70000
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const rooms = [
     size: "50M2",
     maxPeople: 4,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: 289
+    price: 95000
   }
 ];
 
@@ -134,7 +134,7 @@ export default function Roomslider() {
                       className="uppercase text-sm tracking-wider py-3 px-6 bg-[#991b1b] text-white hover:bg-[#A52A2A] transition-colors duration-300"
                       onClick={() => handleBookNow(room.id)}
                     >
-                      Book Now From ${room.price}
+                      Book Now From N{room.price}
                     </button>
                   </div>
                 </div>
