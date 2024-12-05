@@ -42,7 +42,7 @@ const rooms = [
     size: "100M2",
     maxPeople: 5,
     description: "Experience the ultimate luxury with our presidential suite.",
-    price: 150000
+    price: 200000
   },
   // Add more rooms here
   {

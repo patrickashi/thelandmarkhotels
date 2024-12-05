@@ -51,7 +51,7 @@ export const rooms = [
       size: "60M2",
       maxPeople: 2,
       description: "Designed for business travelers, the Executive Room offers a sleek and modern space with all the essentials.",
-      price: 65000,
+      price: 150000,
     },
     {
       id: 6,

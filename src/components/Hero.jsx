@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import herobg1 from "../images/herobg1.jpg";
 
 
@@ -17,9 +18,11 @@ function Hero() {
         <p className='font-serif'>COME AND ENJOY</p>
         <h1 className="text-4xl md:text-6xl mb-4 font-serif my-10">WELCOME TO THE LANDMARK HOTEL</h1>
         <p className="text-xl md:text-2xl mb-8">Experience luxury like never before</p>
-        <button className="bg-[#991b1b] text-sm text-white px-6 py-3 mt-4  transition duration-300">
-          BOOK ONLINE
-        </button>
+        <Link to="/rooms">
+          <button className="bg-[#991b1b] text-sm text-white px-6 py-3 mt-4  transition duration-300">
+            BOOK ONLINE
+          </button>
+        </Link>
       </div>
     </div>
   );

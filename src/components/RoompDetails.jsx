@@ -25,12 +25,16 @@ export default function RoompDetails() {
             className="w-full h-96 object-cover"
           />
         </div>
-        <div className="text-white">
-          <p className="text-lg">{room.description}</p>
-          <p className="text-lg">Size: {room.size}</p>
-          <p className="text-lg">Max People: {room.maxPeople}</p>
-          <p className="text-lg text-[#d97706]">Price: N{room.price}</p>
+        <div className="text-white flex flex-col gap-2">
+          <p className="text-sm">{room.description}</p>
+          <p className="text-sm">Size: {room.size}</p>
+          <p className="text-sm">Max People: {room.maxPeople}</p>
+          <p className="text-sm text-[#d97706]">Price: N{room.price}</p>
+          <button className="py-3 px-6 mt-10 bg-[#991b1b] text-white hover:bg-[#A52A2A] transition-colors duration-300">
+            Book Now
+          </button>
         </div>
+   
       </div>
     </div>
   );
