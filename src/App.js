@@ -13,6 +13,7 @@ import herobg2 from './images/herobg2.jpg';
 import Breathtakingviews from './components/Breathtakingviews';
 import Roomslider from './components/Roomslider';
 import Videosec from './components/Videosec';
+import RoomDetails from './components/RoomDetails';
 
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/contact" element={<Contact />} />
 
+          <Route path="/" element={<Roomslider />} />
+          <Route path="/book/:id" element={<RoomDetails />} />
         </Routes>
         <Footer />
       </div>

@@ -31,6 +31,25 @@ const rooms = [
     maxPeople: 4,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     price: 95000
+  },
+  {
+    id: 4,
+    name: "Presidential Suite",
+    image: herobg2,
+    size: "100M2",
+    maxPeople: 5,
+    description: "Experience the ultimate luxury with our presidential suite.",
+    price: 150000
+  },
+  // Add more rooms here
+  {
+    id: 5,
+    name: "Ocean View Room",
+    image: herobg1,
+    size: "80M2",
+    maxPeople: 2,
+    description: "A stunning room with a view of the ocean.",
+    price: 85000
   }
 ];
 
