@@ -14,6 +14,7 @@ import Breathtakingviews from './components/Breathtakingviews';
 import Roomslider from './components/Roomslider';
 import Videosec from './components/Videosec';
 import RoomDetails from './components/RoomDetails';
+import RoompDetails from './components/RoompDetails';
 
 
 function App() {
@@ -46,9 +47,13 @@ function App() {
           <Route path="/dining" element={<Dining />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/rooms" element={<Rooms />} />
 
           <Route path="/" element={<Roomslider />} />
+          {/* room slider details */}
           <Route path="/book/:id" element={<RoomDetails />} />
+          {/* room page details */}
+          <Route path="/room/:roomId" element={<RoompDetails />} />
         </Routes>
         <Footer />
       </div>
