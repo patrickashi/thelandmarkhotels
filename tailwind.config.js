@@ -16,7 +16,7 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'], // Add Poppins to the fontFamily
         playfair: ['Playfair Display', 'serif'],
         sail: ['Sail', 'cursive'],
-        carter: ['Carter One', 'cursive'],
+        carter: ['Carter One', 'sail'],
       },
     },
   },

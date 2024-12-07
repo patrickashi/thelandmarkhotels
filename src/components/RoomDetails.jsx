@@ -81,9 +81,11 @@ function RoomDetails() {
           </div>
           <span className="text-lg font-bold text-[#d97706]">N{room.price}</span>
         </div>
-        <button className="py-3 px-6 bg-[#991b1b] text-white hover:bg-[#A52A2A] transition-colors duration-300">
-          Book Now
-        </button>
+        <a href='https://paystack.com/pay/landmarkbooking'>
+          <button className="py-3 px-6 bg-[#991b1b] text-white hover:bg-[#A52A2A] transition-colors duration-300">
+            Book Now
+          </button>
+        </a>
       </div>
     </div>
   );
