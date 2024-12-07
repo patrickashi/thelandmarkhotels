@@ -13,8 +13,8 @@ export default function RoompDetails() {
   return (
     <div className="bg-[#111111] py-16 px-4 md:px-8 lg:px-16">
       <div className="text-center mb-12">
-        <h3 className="text-white/80 uppercase tracking-wider text-sm mb-2">Landmark Hotels</h3>
-        <h2 className="text-4xl md:text-5xl text-white font-serif">{room.name}</h2>
+        <h3 className="text-[#C4A484]/80 uppercase tracking-wider text-sm mb-2 font-playfair">Landmark Hotels</h3>
+        <h2 className="text-4xl md:text-5xl text-white font-sail">{room.name}</h2>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

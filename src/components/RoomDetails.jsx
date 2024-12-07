@@ -32,7 +32,7 @@ const rooms = [
     image: luxury_room,
     size: "50M2",
     maxPeople: 4,
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description: "A spacious suite with premium furnishings and an unbeatable view, ideal for families or business travelers.",
     price: 95000
   },
   {
@@ -72,7 +72,7 @@ function RoomDetails() {
           alt={room.name}
           className="w-full h-[300px] md:h-[500px] object-cover mb-8"
         />
-        <h1 className="text-4xl font-serif mb-4">{room.name}</h1>
+        <h1 className="text-4xl font-sail mb-4">{room.name}</h1>
         <p className="text-white/70 mb-6">{room.description}</p>
         <div className="flex justify-between items-center mb-6">
           <div className="text-sm">
