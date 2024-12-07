@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaMapMarkerAlt } from 'react-icons/fa';
+
 import presidential_suite from "../images/presidential_suite.jpg";
 import oceanview_room from "../images/oceanview_room.jpg";
 import signature_room from "../images/signature_room.jpg";
@@ -36,7 +38,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Newsletter Section */}
           <div>
-            <h3 className="text-xs mb-4">NEWSLETTER</h3>
+            <h3 className="text-xs mb-4 font-semibold">NEWSLETTER</h3>
             <p className="mb-4">Subscribe to our Newsletter.</p>
             <form onSubmit={handleSubmit}>
               <input
@@ -52,12 +54,18 @@ export default function Footer() {
                 SUBSCRIBE NOW
               </button>
             </form>
-            <p className='text-xs mt-4 text-[#d97706]'>Ministry of works road, igoli-ogoja, cross river state, Nigeria</p>
+            <div className="flex mt-4 items-center space-x-2">
+              <div>
+                <FaMapMarkerAlt size={16} className='text-[#4ade80]' />
+              </div>
+              <div className='text-xs '>Ministry of works road, igoli-ogoja, cross river state, Nigeria</div>
+            </div>
+            
           </div>
 
           {/* Useful Links Section */}
           <div>
-            <h3 className="text-xsf mb-4">USEFUL LINKS</h3>
+            <h3 className="text-xsf mb-4 font-semibold">USEFUL LINKS</h3>
             <nav className="flex flex-col space-y-2">
               {footerLinks.map((link) => (
                 <Link
@@ -74,7 +82,7 @@ export default function Footer() {
 
           {/* Gallery Section */}
           <div>
-            <h3 className="text-xs mb-4">GALLERY</h3>
+            <h3 className="text-xs mb-4 font-semibold">GALLERY</h3>
             <div className="grid grid-cols-3 gap-2">
               {galleryImages.map((image, index) => (
                 <div key={index} className="aspect-square overflow-hidden">
