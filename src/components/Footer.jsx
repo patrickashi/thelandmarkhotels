@@ -52,6 +52,7 @@ export default function Footer() {
                 SUBSCRIBE NOW
               </button>
             </form>
+            <p className='text-xs mt-4 text-[#d97706]'>Ministry of works road, igoli-ogoja, cross river state, Nigeria</p>
           </div>
 
           {/* Useful Links Section */}
