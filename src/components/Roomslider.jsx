@@ -112,8 +112,8 @@ export default function Roomslider() {
   return (
     <div className="bg-[#111111] py-16 px-4 md:px-8 lg:px-16">
       <div className="text-center mb-12">
-        <h3 className="text-white/80 uppercase tracking-wider text-sm mb-2">Landmark Hotels</h3>
-        <h2 className="text-4xl md:text-5xl text-white font-serif">Room & Suites</h2>
+        <h3 className="text-[#C4A484]/80 uppercase tracking-wider text-sm mb-2 font-playfair">Landmark Hotels</h3>
+        <h2 className="text-4xl md:text-5xl text-white font-sail">Room & Suites</h2>
       </div>
 
       <div className="relative w-full max-w-4xl mx-auto">
@@ -150,7 +150,7 @@ export default function Roomslider() {
                     </div>
                   </div>
                   <div className="p-6 text-center w-80 flex flex-col justify-center">
-                    <h3 className="text-[#C4A484] text-2xl font-serif mb-3">{room.name}</h3>
+                    <h3 className="text-[#C4A484] text-2xl font-carter mb-3">{room.name}</h3>
                     <p className="text-white/60 text-sm mb-6">{room.description}</p>
                     <button
                       className="uppercase text-sm tracking-wider py-3 px-6 bg-[#991b1b] text-white hover:bg-[#A52A2A] transition-colors duration-300"
