@@ -58,7 +58,7 @@ export default function Footer() {
               <div>
                 <FaMapMarkerAlt size={16} className='text-[#4ade80]' />
               </div>
-              <div className='text-xs '>Ministry of works road, igoli-ogoja, cross river state, Nigeria</div>
+              <div className='text-xs text-[#f59e0b]'>Ministry of works road, igoli-ogoja, cross river state, Nigeria</div>
             </div>
             
           </div>

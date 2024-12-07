@@ -11,10 +11,12 @@ module.exports = {
           'gradient-conic':
             'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         },
-        fontFamily: {
-          poppins: ['Poppins', 'sans-serif'], // Add Poppins to the fontFamily
-          playfair: ['Playfair Display', 'serif'],
-        },
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'], // Add Poppins to the fontFamily
+        playfair: ['Playfair Display', 'serif'],
+        sail: ['Sail', 'cursive'],
+        carter: ['Carter One', 'cursive'],
       },
     },
   },
