@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import lm_logo from "../images/lm_logo.png";
+import landmark_logo_transp from "../images/landmark_logo_transp.png";
 
 function Navbar({ isScrolled }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,13 +22,13 @@ function Navbar({ isScrolled }) {
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#991b1b] bg-opacity-90' : 'bg-transparent'}`}>
+    <nav className={`fixed w-full h-[70px] z-50 transition-all duration-300 ${isScrolled ? 'bg-[#991b1b] bg-opacity-90' : 'bg-transparent'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             {/* <span className=" font-bold text-white">The Landmark Hotel</span> */}
             <Link to="/" className='flex align-middle items-center'>
-              <img src={lm_logo} className='w-16' alt="logo" />
+              <img src={landmark_logo_transp} className='w-16' alt="logo" />
               <p className='text-white text-xs'>LANDMARK <br/> HOTELS </p>
             </Link>
           </div>
