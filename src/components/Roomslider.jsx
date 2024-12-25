@@ -10,12 +10,12 @@ import oceanview_room from "../images/oceanview_room.jpg";
 const rooms = [
   {
     id: 1,
-    name: "Signature Room",
+    name: "Standard Room",
     image: signature_room,
     size: "70M2",
     maxPeople: 2,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: 50000
+    price: 40000
   },
   {
     id: 2,
@@ -24,26 +24,44 @@ const rooms = [
     size: "50M2",
     maxPeople: 3,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: 70000
+    price: 45000
   },
   {
     id: 3,
-    name: "Luxury Room",
+    name: "Super Deluxe",
     image: luxury_room,
     size: "50M2",
     maxPeople: 4,
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    price: 95000
+    price: 50000
   },
   {
     id: 4,
+    name: "Executive Suite",
+    image: presidential_suite,
+    size: "100M2",
+    maxPeople: 5,
+    description: "Experience the ultimate luxury with our presidential suite.",
+    price: 70000
+  },
+  {
+    id: 5,
     name: "Presidential Suite",
     image: presidential_suite,
     size: "100M2",
     maxPeople: 5,
     description: "Experience the ultimate luxury with our presidential suite.",
-    price: 150000
-  }
+    price: 100000
+  },
+  {
+    id: 6,
+    name: "Conference Hall",
+    image: presidential_suite,
+    size: "100M2",
+    maxPeople: 5,
+    description: "Experience the ultimate luxury with our presidential suite.",
+    price: 200000
+  },
   // Add more rooms here
  
 ];
