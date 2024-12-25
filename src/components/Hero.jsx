@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import herobg1 from "../images/herobg1.jpg";
+import presidential_suite from "../images/presidential_suite (2).jpg";
 import '../index.css';
 
 
@@ -9,7 +9,7 @@ function Hero() {
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={herobg1}
+          src={presidential_suite}
           alt="Landmark Hotel"
           className="w-full h-full object-cover"
         />
