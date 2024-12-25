@@ -16,7 +16,7 @@ function Hero() {
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
       <div className="relative z-10 text-center text-white">
-        <p className=''>COME AND ENJOY</p>
+        <p className=''>A TOUCH OF CLASS</p>
         <h1 className="text-4xl md:text-6xl font-carter my-10">WELCOME TO THE LANDMARK HOTEL</h1>
         <p className="text-xl md:text-2xl mb-8">Experience luxury like never before</p>
         <Link to="/rooms">
